@@ -1,6 +1,6 @@
 import React from "react";
 import Explore from "./Explore";
-import HorizontalCarousel from "./Cruosel";
+import HorizontalCarousel from "./MainCruosel";
 import LimitedLeftSide from "./LimitedLeftSide";
 
 const LimitedEdtion = () => {

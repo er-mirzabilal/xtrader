@@ -1326,7 +1326,10 @@ const header = () => {
               </div>
               <div className="col-md-9 col-sm-9 col-nav-menu mr-header-menu">
                 <div className="col-header-menu">
-                  <div className="primary-nav nav">
+                  <div
+                    // style={{ marginTop: "50px" }}
+                    className="primary-nav nav"
+                  >
                     <ul id="menu-primary-menu" className="menu">
                       <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2537 current_page_item menu-item-4580 active">
                         <a href="https://x4traders.com/">Home</a>
@@ -1467,82 +1470,82 @@ const header = () => {
                       </li>
                     </ul>{" "}
                   </div>
-                </div>
-                <div className="header-bar topbar">
-                  <div
-                    id="custom_html-2"
-                    className="widget_text widget widget_custom_html"
-                  >
-                    <div className="textwidget custom-html-widget">
-                      {" "}
-                      <a href="#">Sell On X4Traders</a>
+                  <div className="header-bar topbar">
+                    <div
+                      id="custom_html-2"
+                      className="widget_text widget widget_custom_html"
+                    >
+                      <div className="textwidget custom-html-widget">
+                        {" "}
+                        <a href="#">Sell On X4Traders</a>
+                      </div>
                     </div>
-                  </div>
-                  <div
-                    id="custom_html-3"
-                    className="widget_text widget widget_custom_html"
-                  >
-                    <div className="textwidget custom-html-widget">
-                      {" "}
-                      <a href="#">Track Your Order</a>
+                    <div
+                      id="custom_html-3"
+                      className="widget_text widget widget_custom_html"
+                    >
+                      <div className="textwidget custom-html-widget">
+                        {" "}
+                        <a href="#">Track Your Order</a>
+                      </div>
                     </div>
-                  </div>
-                  <div
-                    id="custom_html-4"
-                    className="widget_text widget widget_custom_html"
-                  >
-                    <div className="textwidget custom-html-widget">
-                      <div className="mf-currency-widget">
-                        <div className="widget-currency">
-                          <span className="current">US Dollar</span>
-                          <ul>
-                            <li className="actived">
-                              <a
-                                href="#"
-                                className="woocs_flag_view_item woocs_flag_view_item_current"
-                                data-currency="USD"
-                              >
-                                US Dollar
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="#"
-                                className="woocs_flag_view_item"
-                                data-currency="EUR"
-                              >
-                                European Euro
-                              </a>
-                            </li>
-                          </ul>{" "}
+                    <div
+                      id="custom_html-4"
+                      className="widget_text widget widget_custom_html"
+                    >
+                      <div className="textwidget custom-html-widget">
+                        <div className="mf-currency-widget">
+                          <div className="widget-currency">
+                            <span className="current">US Dollar</span>
+                            <ul>
+                              <li className="actived">
+                                <a
+                                  href="#"
+                                  className="woocs_flag_view_item woocs_flag_view_item_current"
+                                  data-currency="USD"
+                                >
+                                  US Dollar
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="#"
+                                  className="woocs_flag_view_item"
+                                  data-currency="EUR"
+                                >
+                                  European Euro
+                                </a>
+                              </li>
+                            </ul>{" "}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    id="custom_html-5"
-                    className="widget_text widget widget_custom_html"
-                  >
-                    <div className="textwidget custom-html-widget">
-                      <div id="lang_sel">
-                        <ul>
-                          <li>
-                            <a href="#" className="lang_sel_sel icl-en">
-                              English
-                            </a>
-                            <ul>
-                              <li className="icl-fr">
-                                <a href="#">French</a>
-                              </li>
-                              <li className="icl-de">
-                                <a href="#">German</a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                    <div
+                      id="custom_html-5"
+                      className="widget_text widget widget_custom_html"
+                    >
+                      <div className="textwidget custom-html-widget">
+                        <div id="lang_sel">
+                          <ul>
+                            <li>
+                              <a href="#" className="lang_sel_sel icl-en">
+                                English
+                              </a>
+                              <ul>
+                                <li className="icl-fr">
+                                  <a href="#">French</a>
+                                </li>
+                                <li className="icl-de">
+                                  <a href="#">German</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
-                  </div>{" "}
+                    </div>{" "}
+                  </div>
                 </div>
               </div>
             </div>

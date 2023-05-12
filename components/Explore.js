@@ -1,4 +1,4 @@
-import HorizontalCarousel from "@/components/Cruosel";
+import HorizontalCarousel from "@/components/MainCruosel";
 import React from "react";
 
 const Explore = () => {
