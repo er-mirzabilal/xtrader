@@ -1,12 +1,9 @@
 import Footer from "@/components/Footer";
-import { Inter } from "@next/font/google";
 import Header from "components/header";
-import NewArrival from "../components/NewArrival";
 import DealOfTheDay from "../components/DealOfTheDay";
 import TopCategory from "@/components/TopCategory";
 import Discount from "@/components/Discount";
 import FreeDelevery from "@/components/FreeDelevery";
-import HorizontalCarousel from "../components/Cruosel";
 import Explore from "@/components/Explore";
 import LimitedEdtion from "@/components/LimitedEdtion";
 import BedDiscount from "@/components/BedDiscount";
@@ -320,31 +317,6 @@ export default function Home() {
           <div className="martfury-container">
             <div className="row">
               <section className="wpb-content-wrapper">
-                {/* <div
-                  style={{
-                    backgroundColor: "red",
-                    width: "100%",
-
-                    display: "flex",
-                  }}
-                >
-                  <div
-                    style={{
-                      backgroundColor: "green",
-                      width: "70%",
-                      height: "300px",
-                    }}
-                  >
-                    <Explore />
-                  </div>
-                  <div
-                    style={{
-                      backgroundColor: "yellow",
-                      width: "30%",
-                      height: "300px",
-                    }}
-                  ></div>
-                </div> */}
                 <LimitedEdtion />
 
                 {/* free delevery */}
