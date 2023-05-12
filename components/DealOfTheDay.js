@@ -1,6 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const DealOfTheDay = () => {
+  const [time, setTime] = useState("24:00:00");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime((prevTime) => {
+        // Split the time into hours, minutes, and seconds
+        const [hours, minutes, seconds] = prevTime.split(":").map(Number);
+
+        // Calculate the total number of seconds
+        let totalSeconds = hours * 3600 + minutes * 60 + seconds;
+
+        // Decrease the total seconds by 1
+        totalSeconds--;
+
+        if (totalSeconds < 0) {
+          // Time is complete, remove the box or perform any other action
+          clearInterval(interval);
+          return prevTime;
+        }
+
+        // Calculate the new hours, minutes, and seconds
+        const newHours = Math.floor(totalSeconds / 3600);
+        const newMinutes = Math.floor((totalSeconds % 3600) / 60);
+        const newSeconds = totalSeconds % 60;
+
+        // Format the new time
+        return `${newHours} : ${String(newMinutes).padStart(2, "0")} : ${String(
+          newSeconds
+        ).padStart(2, "0")}`;
+      });
+    }, 1000);
+
+    // Clean up the interval on component unmount
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
   return (
     <div>
       <div
@@ -12,7 +49,7 @@ const DealOfTheDay = () => {
             {" "}
             <h2 className="cat-title">Deals of the day</h2>{" "}
             <div className="header-countdown">
-              <span className="ends-text">Ends in:</span>
+              <span className="ends-text">Ends in : {time}</span>
               <div className="martfury-countdown" data-expire={65406} />
             </div>{" "}
           </div>{" "}
