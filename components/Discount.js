@@ -36,7 +36,8 @@ const Discount = () => {
                     </div>
                     <div className="banner-image">
                       <img
-                        src="images/transparent.png"
+                        // src="images/transparent.png"
+                        src="https://x4traders.com/wp-content/uploads/2018/08/b3.jpg"
                         data-original="https://x4traders.com/wp-content/uploads/2018/08/b3.jpg"
                         alt=""
                         className="lazy "
@@ -84,7 +85,8 @@ const Discount = () => {
                     </div>
                     <div className="banner-image">
                       <img
-                        src="images/transparent.png"
+                        // src="images/transparent.png"
+                        src="https://x4traders.com/wp-content/uploads/2018/08/b4.jpg"
                         data-original="https://x4traders.com/wp-content/uploads/2018/08/b4.jpg"
                         alt=""
                         className="lazy "
@@ -132,7 +134,8 @@ const Discount = () => {
                     </div>
                     <div className="banner-image">
                       <img
-                        src="images/transparent.png"
+                        // src="images/transparent.png"
+                        src="https://x4traders.com/wp-content/uploads/2018/08/b5.jpg"
                         data-original="https://x4traders.com/wp-content/uploads/2018/08/b5.jpg"
                         alt=""
                         className="lazy "

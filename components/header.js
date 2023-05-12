@@ -6,7 +6,7 @@ const header = () => {
       <header
         id="site-header"
         className="site-header header-department-bot header-dark"
-        style={{ backgroundColor: "gray" }}
+        // style={{ backgroundColor: "gray" }}
       >
         <div className="header-main-wapper">
           <div className="header-main">

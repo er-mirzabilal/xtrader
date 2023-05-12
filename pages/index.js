@@ -6,7 +6,12 @@ import DealOfTheDay from "../components/DealOfTheDay";
 import TopCategory from "@/components/TopCategory";
 import Discount from "@/components/Discount";
 import FreeDelevery from "@/components/FreeDelevery";
-import HorizontalCarousel from "./try";
+import HorizontalCarousel from "../components/Cruosel";
+import Explore from "@/components/Explore";
+import LimitedEdtion from "@/components/LimitedEdtion";
+import BedDiscount from "@/components/BedDiscount";
+import Downlond from "@/components/Downlond";
+import HotArival from "@/components/HotArival";
 
 export default function Home() {
   return (
@@ -307,9 +312,7 @@ export default function Home() {
         &lt;style&gt; .wpb_animate_when_almost_visible {"{"} opacity: 1; {"}"}
         &lt;/style&gt;
       </noscript>
-     
-     
-      <div id="martfury-preloader" className="martfury-preloader"></div>
+
       <div id="page" className="hfeed site">
         {/* header */}
         <Header />
@@ -317,37 +320,11 @@ export default function Home() {
           <div className="martfury-container">
             <div className="row">
               <section className="wpb-content-wrapper">
-                <div className="vc_row wpb_row vc_row-fluid">
-                  <div className="martfury-container">
-                    <div className="row">
-                      <div className="wpb_column vc_column_container vc_col-sm-12">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div className="martfury-empty-space ">
-                              <div
-                                className="mf_empty_space_lg"
-                                style={{ height: 30 }}
-                              />
-                              <div
-                                className="mf_empty_space_md"
-                                style={{ height: 30 }}
-                              />
-                              <div
-                                className="mf_empty_space_xs"
-                                style={{ height: 30 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 {/* <div
                   style={{
                     backgroundColor: "red",
                     width: "100%",
-                    height: "300px",
+
                     display: "flex",
                   }}
                 >
@@ -358,7 +335,7 @@ export default function Home() {
                       height: "300px",
                     }}
                   >
-                    <img src="images/5a.jpg" width={"40%"} />
+                    <Explore />
                   </div>
                   <div
                     style={{
@@ -368,8 +345,39 @@ export default function Home() {
                     }}
                   ></div>
                 </div> */}
+                <LimitedEdtion />
+
                 {/* free delevery */}
-                <FreeDelevery />
+
+                <div className="vc_row wpb_row vc_row-fluid">
+                  <div className="martfury-container">
+                    <div className="row">
+                      <div className="wpb_column vc_column_container vc_col-sm-12">
+                        <div className="vc_column-inner">
+                          <div className="wpb_wrapper">
+                            <div className="martfury-empty-space ">
+                              <div
+                                className="mf_empty_space_lg"
+                                style={{ height: 85 }}
+                              />
+                              <div
+                                className="mf_empty_space_md"
+                                style={{ height: 85 }}
+                              />
+                              <div
+                                className="mf_empty_space_xs"
+                                style={{ height: 85 }}
+                              />
+                            </div>
+                            {/* deal of the day */}
+                            <FreeDelevery />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="vc_row wpb_row vc_row-fluid">
                   <div className="martfury-container">
                     <div className="row">
@@ -398,62 +406,8 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="vc_row wpb_row vc_row-fluid">
-                  <div className="martfury-container">
-                    <div className="row">
-                      <div className="wpb_column vc_column_container vc_col-sm-12">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div className="martfury-empty-space ">
-                              <div
-                                className="mf_empty_space_lg"
-                                style={{ height: 76 }}
-                              />
-                              <div
-                                className="mf_empty_space_md"
-                                style={{ height: 76 }}
-                              />
-                              <div
-                                className="mf_empty_space_xs"
-                                style={{ height: 76 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 {/* minimal */}
-                <Discount />
-                <div className="vc_row wpb_row vc_row-fluid">
-                  <div className="martfury-container">
-                    <div className="row">
-                      <div className="wpb_column vc_column_container vc_col-sm-12">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div className="martfury-empty-space ">
-                              <div
-                                className="mf_empty_space_lg"
-                                style={{ height: 50 }}
-                              />
-                              <div
-                                className="mf_empty_space_md"
-                                style={{ height: 50 }}
-                              />
-                              <div
-                                className="mf_empty_space_xs"
-                                style={{ height: 50 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* top category */}
-                <TopCategory />
 
                 <div className="vc_row wpb_row vc_row-fluid">
                   <div className="martfury-container">
@@ -464,84 +418,28 @@ export default function Home() {
                             <div className="martfury-empty-space ">
                               <div
                                 className="mf_empty_space_lg"
-                                style={{ height: 52 }}
+                                style={{ height: 85 }}
                               />
                               <div
                                 className="mf_empty_space_md"
-                                style={{ height: 52 }}
+                                style={{ height: 85 }}
                               />
                               <div
                                 className="mf_empty_space_xs"
-                                style={{ height: 52 }}
+                                style={{ height: 85 }}
                               />
                             </div>
-                            <div
-                              className="mf-products-tabs mf-products-tabs-carousel woocommerce  header-style-1"
-                              id="products-tabs645c8202e6bf8"
-                            >
-                              <div className="tabs-header">
-                                <h2 className="tabs-cat__heading">
-                                  <span className="cat-title">
-                                    Consumer Electronics
-                                  </span>
-                                </h2>{" "}
-                                <div className="tabs-header-nav">
-                                  {" "}
-                                  <ul className="tabs-nav">
-                                    {" "}
-                                    <li>
-                                      <a
-                                        href="#"
-                                        data-href="recent"
-                                        className="active"
-                                      >
-                                        New Arrivals
-                                      </a>
-                                    </li>{" "}
-                                    <li>
-                                      <a
-                                        href="#"
-                                        data-href="best_selling"
-                                        className=""
-                                      >
-                                        Best Seller
-                                      </a>
-                                    </li>{" "}
-                                    <li>
-                                      <a
-                                        href="#"
-                                        data-href="top_rated"
-                                        className=""
-                                      >
-                                        Most Popular
-                                      </a>
-                                    </li>{" "}
-                                  </ul>{" "}
-                                  <a className="link" href="#">
-                                    View All
-                                  </a>{" "}
-                                </div>
-                              </div>
-                              <div>
-                                {/* <div className="mf-vc-loading">
-                                  <div className="mf-vc-loading--wrapper" />
-                                </div> */}
-                                <div
-                                  style={{
-                                    // backgroundColor: "green",
-                                    width: "100%",
-                                  }}
-                                >
-                                  <HorizontalCarousel />
-                                </div>
-                              </div>
-                            </div>
+
+                            <Discount />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                {/* top category */}
+
                 <div className="vc_row wpb_row vc_row-fluid">
                   <div className="martfury-container">
                     <div className="row">
@@ -551,83 +449,26 @@ export default function Home() {
                             <div className="martfury-empty-space ">
                               <div
                                 className="mf_empty_space_lg"
-                                style={{ height: 50 }}
+                                style={{ height: 85 }}
                               />
                               <div
                                 className="mf_empty_space_md"
-                                style={{ height: 50 }}
+                                style={{ height: 85 }}
                               />
                               <div
                                 className="mf_empty_space_xs"
-                                style={{ height: 50 }}
+                                style={{ height: 85 }}
                               />
                             </div>
-                            <div
-                              className="mf-products-tabs mf-products-tabs-carousel woocommerce  header-style-1"
-                              id="products-tabs645c8202e6e7f"
-                            >
-                              <div className="tabs-header">
-                                <h2 className="tabs-cat__heading">
-                                  <span className="cat-title">
-                                    Apparels &amp; Clothings
-                                  </span>
-                                </h2>{" "}
-                                <div className="tabs-header-nav">
-                                  {" "}
-                                  <ul className="tabs-nav">
-                                    {" "}
-                                    <li>
-                                      <a
-                                        href="#"
-                                        data-href="recent"
-                                        className="active"
-                                      >
-                                        New Arrivals
-                                      </a>
-                                    </li>{" "}
-                                    <li>
-                                      <a
-                                        href="#"
-                                        data-href="best_selling"
-                                        className=""
-                                      >
-                                        Best Seller
-                                      </a>
-                                    </li>{" "}
-                                    <li>
-                                      <a
-                                        href="#"
-                                        data-href="top_rated"
-                                        className=""
-                                      >
-                                        Most Popular
-                                      </a>
-                                    </li>{" "}
-                                  </ul>{" "}
-                                  <a className="link" href="#">
-                                    View All
-                                  </a>{" "}
-                                </div>
-                              </div>
-                              <div className="tabs-content">
-                                {/* <div className="mf-vc-loading">
-                                  <div className="mf-vc-loading--wrapper" />
-                                </div> */}
-                                <div
-                                  style={{
-                                    backgroundColor: "pink",
-                                    width: "100%",
-                                    height: "300px",
-                                  }}
-                                ></div>
-                              </div>
-                            </div>
+                            <TopCategory />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                {/* exlore 1 */}
+
                 <div className="vc_row wpb_row vc_row-fluid">
                   <div className="martfury-container">
                     <div className="row">
@@ -637,83 +478,27 @@ export default function Home() {
                             <div className="martfury-empty-space ">
                               <div
                                 className="mf_empty_space_lg"
-                                style={{ height: 50 }}
+                                style={{ height: 85 }}
                               />
                               <div
                                 className="mf_empty_space_md"
-                                style={{ height: 50 }}
+                                style={{ height: 85 }}
                               />
                               <div
                                 className="mf_empty_space_xs"
-                                style={{ height: 50 }}
+                                style={{ height: 85 }}
                               />
                             </div>
-                            <div
-                              className="mf-products-tabs mf-products-tabs-carousel woocommerce  header-style-1"
-                              id="products-tabs645c8202e7173"
-                            >
-                              <div className="tabs-header">
-                                <h2 className="tabs-cat__heading">
-                                  <span className="cat-title">
-                                    Home, Garden &amp; Kitchen
-                                  </span>
-                                </h2>{" "}
-                                <div className="tabs-header-nav">
-                                  {" "}
-                                  <ul className="tabs-nav">
-                                    {" "}
-                                    <li>
-                                      <a
-                                        href="#"
-                                        data-href="recent"
-                                        className="active"
-                                      >
-                                        New Arrivals
-                                      </a>
-                                    </li>{" "}
-                                    <li>
-                                      <a
-                                        href="#"
-                                        data-href="best_selling"
-                                        className=""
-                                      >
-                                        Best Seller
-                                      </a>
-                                    </li>{" "}
-                                    <li>
-                                      <a
-                                        href="#"
-                                        data-href="top_rated"
-                                        className=""
-                                      >
-                                        Most Popular
-                                      </a>
-                                    </li>{" "}
-                                  </ul>{" "}
-                                  <a className="link" href="#">
-                                    View All
-                                  </a>{" "}
-                                </div>
-                              </div>
-                              <div className="tabs-content">
-                                {/* <div className="mf-vc-loading">
-                                  <div className="mf-vc-loading--wrapper" />
-                                </div> */}
-                                <div
-                                  style={{
-                                    backgroundColor: "yellow",
-                                    width: "100%",
-                                    height: "300px",
-                                  }}
-                                ></div>
-                              </div>
-                            </div>
+                            <Explore />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                {/* exlore 2 */}
+
                 <div className="vc_row wpb_row vc_row-fluid">
                   <div className="martfury-container">
                     <div className="row">
@@ -723,146 +508,27 @@ export default function Home() {
                             <div className="martfury-empty-space ">
                               <div
                                 className="mf_empty_space_lg"
-                                style={{ height: 40 }}
+                                style={{ height: 85 }}
                               />
                               <div
                                 className="mf_empty_space_md"
-                                style={{ height: 40 }}
+                                style={{ height: 85 }}
                               />
                               <div
                                 className="mf_empty_space_xs"
-                                style={{ height: 40 }}
+                                style={{ height: 85 }}
                               />
                             </div>
+                            <Explore />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="vc_row wpb_row vc_row-fluid">
-                  <div className="martfury-container">
-                    <div className="row">
-                      <div className="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div
-                              className="mf-banner-large  layout-2 "
-                              style={{ backgroundColor: "#f8f8f8" }}
-                            >
-                              <div
-                                className="featured-image"
-                                style={{
-                                  backgroundImage: "url(images/b7.jpg)",
-                                }}
-                              />
-                              <a className="link-all" href="#" />
-                              <div className="row banner-row">
-                                <div className="col-md-offset-1 col-md-3 col-sm-6 col-xs-12 col-banner-content">
-                                  <div className="banner-content">
-                                    <h2 className="box-title">
-                                      FABRIC BED
-                                      <br />
-                                      DISCOUNT{" "}
-                                      <strong className="r-price">
-                                        25% OFF
-                                      </strong>
-                                    </h2>{" "}
-                                    <p className="desc">
-                                      Strong mattress support with 10 wood
-                                      <br />
-                                      prevents sagging and increases mattress
-                                    </p>
-                                  </div>
-                                </div>
-                                <div className="col-md-3 col-sm-6 col-xs-12 col-banner-price">
-                                  <div className="banner-price">
-                                    <span className="sale-price">$260.50</span>{" "}
-                                    <span className="s-price">$219.05</span>{" "}
-                                    <a className="link" href="#">
-                                      Shop Now
-                                    </a>
-                                  </div>
-                                </div>
-                                <div className="col-md-5 col-sm-12 col-xs-12 col-banner-image">
-                                  <div className="banner-image" />
-                                </div>
-                              </div>
-                            </div>
-                            <div className="martfury-empty-space ">
-                              <div
-                                className="mf_empty_space_lg"
-                                style={{ height: 30 }}
-                              />
-                              <div
-                                className="mf_empty_space_md"
-                                style={{ height: 30 }}
-                              />
-                              <div
-                                className="mf_empty_space_xs"
-                                style={{ height: 30 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div
-                              className="mf-banner-medium  layout-5 has-img "
-                              style={{}}
-                            >
-                              <a className="link-all" href="#" />
-                              <div className="banner-content" style={{}}>
-                                <div className="s-content">
-                                  <h2 className="title">
-                                    <strong>iPhone X 128GB</strong>
-                                    <br />
-                                    Retina Display
-                                  </h2>{" "}
-                                  <div className="desc">
-                                    Discount{" "}
-                                    <strong className="r-price">25%</strong> Off
-                                  </div>
-                                </div>
-                                <div className="link-box">
-                                  <a className="link" href="#">
-                                    Shop Now
-                                  </a>
-                                </div>
-                              </div>
-                              <div className="banner-image">
-                                <img
-                                  src="images/transparent.png"
-                                  data-original="https://x4traders.com/wp-content/uploads/2018/08/b6.jpg"
-                                  alt=""
-                                  className="lazy "
-                                  width={530}
-                                  height={245}
-                                />
-                              </div>
-                            </div>
-                            <div className="martfury-empty-space ">
-                              <div
-                                className="mf_empty_space_lg"
-                                style={{ height: 30 }}
-                              />
-                              <div
-                                className="mf_empty_space_md"
-                                style={{ height: 30 }}
-                              />
-                              <div
-                                className="mf_empty_space_xs"
-                                style={{ height: 30 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+                {/* exlore 3 */}
+
                 <div className="vc_row wpb_row vc_row-fluid">
                   <div className="martfury-container">
                     <div className="row">
@@ -872,132 +538,25 @@ export default function Home() {
                             <div className="martfury-empty-space ">
                               <div
                                 className="mf_empty_space_lg"
-                                style={{ height: 70 }}
+                                style={{ height: 85 }}
                               />
                               <div
                                 className="mf_empty_space_md"
-                                style={{ height: 70 }}
+                                style={{ height: 85 }}
                               />
                               <div
                                 className="mf_empty_space_xs"
-                                style={{ height: 70 }}
+                                style={{ height: 85 }}
                               />
                             </div>
-                            <div
-                              className="martfury-newletter "
-                              style={{ backgroundColor: "#f8f8f8" }}
-                            >
-                              <div className="container">
-                                <div className="row newsletter-row">
-                                  <div className="form-image col-md-6 hidden-sm hidden-xs text-center">
-                                    <img
-                                      // src="images/transparent.png"
-                                      src="https://x4traders.com/wp-content/uploads/2022/12/b355.png"
-                                      data-original="https://x4traders.com/wp-content/uploads/2022/12/b355.png"
-                                      alt=""
-                                      className="lazy "
-                                      width={487}
-                                      height={379}
-                                    />
-                                  </div>
-                                  <div className="form-area col-md-6 col-xs-12 col-sm-12">
-                                    <h3 className="form-title">
-                                      Download x4Traders App Now!
-                                    </h3>
-                                    <div className="form-desc">
-                                      Shopping fastly and easily more with our
-                                      app. Get a link to
-                                      <br />
-                                      download the app on your phone.
-                                    </div>
-                                    {/* Mailchimp for WordPress v4.8.12 - https://wordpress.org/plugins/mailchimp-for-wp/ */}
-                                    <form
-                                      id="mc4wp-form-1"
-                                      className="mc4wp-form mc4wp-form-436"
-                                      method="post"
-                                      data-id={436}
-                                      data-name="Newsletter"
-                                    >
-                                      <div className="mc4wp-form-fields">
-                                        <input
-                                          type="email"
-                                          name="EMAIL"
-                                          placeholder="Email Address"
-                                          required=""
-                                        />
-                                        <input
-                                          type="submit"
-                                          defaultValue="Subscribe"
-                                        />
-                                      </div>
-                                      <label
-                                        style={{ display: "none !important" }}
-                                      >
-                                        Leave this field empty if you're human:{" "}
-                                        <input
-                                          type="text"
-                                          name="_mc4wp_honeypot"
-                                          defaultValue=""
-                                          tabIndex={-1}
-                                          autoComplete="off"
-                                        />
-                                      </label>
-                                      <input
-                                        type="hidden"
-                                        name="_mc4wp_timestamp"
-                                        defaultValue={1683784194}
-                                      />
-                                      <input
-                                        type="hidden"
-                                        name="_mc4wp_form_id"
-                                        defaultValue={436}
-                                      />
-                                      <input
-                                        type="hidden"
-                                        name="_mc4wp_form_element_id"
-                                        defaultValue="mc4wp-form-1"
-                                      />
-                                      <div className="mc4wp-response" />
-                                    </form>
-                                    {/* / Mailchimp for WordPress Plugin */}
-                                    <div className="btn-area">
-                                      <a
-                                        className="link"
-                                        href="https://play.google.com/store"
-                                      >
-                                        <img
-                                          src="images/transparent.png"
-                                          data-original="https://x4traders.com/wp-content/uploads/2018/08/t1.png"
-                                          alt=""
-                                          className="lazy "
-                                          width={127}
-                                          height={43}
-                                        />
-                                      </a>
-                                      <a
-                                        className="link"
-                                        href="https://www.appstore.com/"
-                                      >
-                                        <img
-                                          src="images/transparent.png"
-                                          data-original="https://x4traders.com/wp-content/uploads/2018/08/t2.png"
-                                          alt=""
-                                          className="lazy "
-                                          width={128}
-                                          height={43}
-                                        />
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                            <Explore />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                {/* BedDiscount */}
                 <div className="vc_row wpb_row vc_row-fluid">
                   <div className="martfury-container">
                     <div className="row">
@@ -1007,19 +566,76 @@ export default function Home() {
                             <div className="martfury-empty-space ">
                               <div
                                 className="mf_empty_space_lg"
-                                style={{ height: 100 }}
+                                style={{ height: 85 }}
                               />
                               <div
                                 className="mf_empty_space_md"
-                                style={{ height: 100 }}
+                                style={{ height: 85 }}
                               />
                               <div
                                 className="mf_empty_space_xs"
-                                style={{ height: 100 }}
+                                style={{ height: 85 }}
                               />
                             </div>
-                            {/* new Arrival */}
-                            <NewArrival />
+                            <BedDiscount />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* downlond */}
+                <div className="vc_row wpb_row vc_row-fluid">
+                  <div className="martfury-container">
+                    <div className="row">
+                      <div className="wpb_column vc_column_container vc_col-sm-12">
+                        <div className="vc_column-inner">
+                          <div className="wpb_wrapper">
+                            <div className="martfury-empty-space ">
+                              <div
+                                className="mf_empty_space_lg"
+                                style={{ height: 85 }}
+                              />
+                              <div
+                                className="mf_empty_space_md"
+                                style={{ height: 85 }}
+                              />
+                              <div
+                                className="mf_empty_space_xs"
+                                style={{ height: 85 }}
+                              />
+                            </div>
+                            <Downlond />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* hot arival */}
+                <div className="vc_row wpb_row vc_row-fluid">
+                  <div className="martfury-container">
+                    <div className="row">
+                      <div className="wpb_column vc_column_container vc_col-sm-12">
+                        <div className="vc_column-inner">
+                          <div className="wpb_wrapper">
+                            <div className="martfury-empty-space ">
+                              <div
+                                className="mf_empty_space_lg"
+                                style={{ height: 85 }}
+                              />
+                              <div
+                                className="mf_empty_space_md"
+                                style={{ height: 85 }}
+                              />
+                              <div
+                                className="mf_empty_space_xs"
+                                style={{ height: 85 }}
+                              />
+                            </div>
+                            <HotArival />
                           </div>
                         </div>
                       </div>
@@ -1050,14 +666,6 @@ export default function Home() {
         href="css/rs6.css"
         type="text/css"
         media="all"
-      />
-      <style
-        id="rs-plugin-settings-inline-css"
-        type="text/css"
-        dangerouslySetInnerHTML={{
-          __html:
-            "\n\t\t.martfury-arrow-dark{background-color:rgba( 0,0,0,0.3 );  min-width:48px;  min-height:48px;  transition:0.5s}.martfury-arrow-dark:hover{background-color:#000}.martfury-arrow-dark:before{display:none}.martfury-arrow-dark i{color:#fff;  font-size:18px;  position:absolute;  top:50%;  left:50%;  transform:translate(-50%,-50%);  transition:0.5s}.martfury-arrow-dark.tp-leftarrow .right-arrow{display:none}.martfury-arrow-dark.tp-rightarrow .left-arrow{display:none}\n",
-        }}
       />
     </>
   );
