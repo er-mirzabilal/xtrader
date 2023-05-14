@@ -1,6 +1,9 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {
+  Box,
+} from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -65,7 +68,9 @@ const settings = {
 
 const LimitedCarousel = () => {
   return (
-    <Slider {...settings}>
+    <Box sx={{ display: { md: 'block', xs: 'none' } }}>
+    <Slider {...settings} >
+      
       {items.map((item) => (
         // <div key={item.id}>
         //   <img
@@ -130,6 +135,7 @@ const LimitedCarousel = () => {
         </div>
       ))}
     </Slider>
+    </Box>
   );
 };
 

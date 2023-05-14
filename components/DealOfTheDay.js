@@ -64,7 +64,7 @@ const DealOfTheDay = () => {
             <li className="col-xs-6 col-sm-4 col-md-3 col-lg-2 un-6-cols product type-product post-96 status-publish first instock product_cat-books-office product_tag-t-shirt product_tag-wireless has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
               <div className="product-inner  clearfix">
                 <div className="mf-product-thumbnail">
-                  <a href="https://x4traders.com/product/grand-slam-indoor-of-show-jumping-novel/">
+                  <a href="/DeatailPage/DetailPage">
                     <img
                       width={300}
                       height={300}
@@ -102,7 +102,7 @@ const DealOfTheDay = () => {
                       <span className="add-to-cart-text">Add to cart</span>
                     </a>
                     <a
-                      href="https://x4traders.com/product/grand-slam-indoor-of-show-jumping-novel/"
+                      href="/VeiwModle/BasicModal"
                       data-id={96}
                       className="mf-product-quick-view"
                     >

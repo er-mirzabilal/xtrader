@@ -18,9 +18,9 @@ const BedDiscount = () => {
                       style={{
                         backgroundImage: "url(images/b7.jpg)",
                       }}
-                    />
-                    <a className="link-all" href="#" />
-                    <div className="row banner-row">
+                     />
+                     <a className="link-all" href="#" />
+                     <div className="row banner-row">
                       <div className="col-md-offset-1 col-md-3 col-sm-6 col-xs-12 col-banner-content">
                         <div className="banner-content">
                           <h2 className="box-title">

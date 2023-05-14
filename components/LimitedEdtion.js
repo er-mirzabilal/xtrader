@@ -5,7 +5,7 @@ import LimitedLeftSide from "./LimitedLeftSide";
 
 const LimitedEdtion = () => {
   return (
-    <div className="martfury-container">
+    <div className="martfury-container" style={{ display: { sm: "none"}}}>
       <div className="row">
         <div className="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-9 vc_col-xs-12">
           <div className="vc_column-inner">

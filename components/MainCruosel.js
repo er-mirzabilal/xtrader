@@ -78,7 +78,7 @@ const HorizontalCarousel = () => {
               onMouseLeave={handleMouseLeave}
               sx={{
                 position: "relative",
-                width: 200,
+                width: 280,
                 paddingX: 3,
                 ":hover": { border: "1px solid black" },
                 paddingTop: 2,
@@ -93,14 +93,14 @@ const HorizontalCarousel = () => {
                   <Box
                     sx={{
                       position: "relative",
-                      bottom: 80,
+                      bottom: 64,
                       width: "100%",
                       height: 60,
                       backgroundColor: "white",
                       paddingY: 2,
                       display: "flex",
                       justifyContent: "space-betwwen",
-                      paddingLeft: 1,
+                      paddingLeft: 2,
                     }}
                   >
                     <IconButton
@@ -110,7 +110,7 @@ const HorizontalCarousel = () => {
                         ":hover": { backgroundColor: "#fcb800" },
                       }}
                     >
-                      <ShoppingBagOutlinedIcon />
+                      <ShoppingBagOutlinedIcon sx={{ fontSize: 24}} />
                     </IconButton>
                     <IconButton
                       sx={{
@@ -120,7 +120,7 @@ const HorizontalCarousel = () => {
                         marginLeft: 0.7,
                       }}
                     >
-                      <RemoveRedEyeOutlinedIcon />
+                      <RemoveRedEyeOutlinedIcon sx={{ fontSize: 24}}/>
                     </IconButton>
                     <IconButton
                       sx={{
@@ -130,7 +130,7 @@ const HorizontalCarousel = () => {
                         marginLeft: 0.7,
                       }}
                     >
-                      <FavoriteBorderOutlinedIcon />
+                      <FavoriteBorderOutlinedIcon sx={{ fontSize: 24}}/>
                     </IconButton>
                     <IconButton
                       sx={{
@@ -140,45 +140,45 @@ const HorizontalCarousel = () => {
                         marginLeft: 0.7,
                       }}
                     >
-                      <AddchartOutlinedIcon />
+                      <AddchartOutlinedIcon sx={{ fontSize: 24}}/>
                     </IconButton>
                   </Box>
-                  <Box sx={{ marginTop: -10, paddingBottom: 3 }}>
-                    <Typography>{item.Type}</Typography>
+                  <Box sx={{ marginTop: -6, paddingBottom: 2 }}>
+                    <Typography sx={{ fontSize: 16}}>{item.Type}</Typography>
                     <Box
                       sx={{ display: "flex", marginTop: 1, marginLeft: -0.5 }}
                     >
                       <Rating
-                        sx={{ fontSize: 16 }}
+                        sx={{ fontSize: 20 }}
                         name="read-only"
                         value={5}
                         readOnly
                       />
-                      <Typography sx={{ fontSize: 13, marginLeft: 1 }}>
+                      <Typography sx={{ fontSize: 15, marginLeft: 1 }}>
                         {item.StarRating}
                       </Typography>
                     </Box>
-                    <Typography sx={{ color: "black", fontSize: 17 }}>
+                    <Typography sx={{ color: "black", fontSize: 20 }}>
                       ${item.Price}
                     </Typography>
                   </Box>
                 </Box>
               )}
               {hoveredIndex === index ? null : (
-                <Box sx={{ marginTop: 1.5, paddingBottom: 3 }}>
-                  <Typography>{item.Type}</Typography>
+                <Box sx={{ marginTop: 1.5, paddingBottom: 2 }}>
+                  <Typography sx={{ fontSize: 16}}>{item.Type}</Typography>
                   <Box sx={{ display: "flex", marginTop: 1, marginLeft: -0.5 }}>
                     <Rating
-                      sx={{ fontSize: 16 }}
+                      sx={{ fontSize: 20 }}
                       name="read-only"
                       value={5}
                       readOnly
                     />
-                    <Typography sx={{ fontSize: 13, marginLeft: 1 }}>
+                    <Typography sx={{ fontSize: 15, marginLeft: 1 }}>
                       {item.StarRating}
                     </Typography>
                   </Box>
-                  <Typography sx={{ color: "black", fontSize: 17 }}>
+                  <Typography sx={{ color: "black", fontSize: 20 }}>
                     ${item.Price}
                   </Typography>
                 </Box>
